@@ -50,6 +50,6 @@ public class EnchantBookForEmeraldsMixin {
         if (SSO.CONFIG.enchantmentLimits.limitBookTradeLevel.get() && value > SSO.CONFIG.enchantmentLimits.bookTradeLevelLimit.get()) {
             value = SSO.CONFIG.enchantmentLimits.bookTradeLevelLimit.get();
         }
-        return value;
+        return original;
     }
 }
