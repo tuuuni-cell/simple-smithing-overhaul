@@ -4,6 +4,39 @@
 - Java Development Kit (JDK) 21 or newer
 - Git installed on your system
 
+### Installing Java on Linux Mint
+
+**Step 1: Update your package manager**
+```bash
+sudo apt update
+```
+
+**Step 2: Install Java 21**
+```bash
+sudo apt install openjdk-21-jdk
+```
+
+**Step 3: Verify the installation**
+After installation completes, verify Java is installed:
+```bash
+java -version
+javac -version
+```
+
+You should see output showing Java 21.
+
+**Default Java installation path on Linux Mint:**
+```bash
+/usr/lib/jvm/java-21-openjdk-amd64
+```
+
+If the above path doesn't exist, find your Java installation:
+```bash
+ls /usr/lib/jvm/
+```
+
+This will list all Java versions installed. Look for a folder that includes "java-21" or "openjdk".
+
 ## Step 1: Download the Source Code
 ```bash
 git clone https://github.com/pajicadvance/simple-smithing-overhaul.git
